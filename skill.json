@@ -1,0 +1,35 @@
+{
+  "name": "genpark-conversational-recruiter-notetaker-competency-scorer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time conversational recruiter interview notetaker & candidate competency matrix scorer.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "recruiter-notetaker",
+    "competency-scorer",
+    "interview-copilot",
+    "hr-tech",
+    "ph-august-dev"
+  ],
+  "inputs": {
+    "interview_transcript_stream": {
+      "type": "string"
+    },
+    "job_role_rubric": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "competency_scores": {
+      "type": "object"
+    },
+    "structured_interview_notes": {
+      "type": "array"
+    },
+    "hiring_recommendation": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
